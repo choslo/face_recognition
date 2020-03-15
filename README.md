@@ -1,5 +1,4 @@
-# <center> Face Recognition </center> 
-## <center> Compressed Sensing
+# Face Recognition  -  Compressed Sensing
 
 <center> Nayel Bettache - Solène Cochennec </center> 
 
