@@ -22,7 +22,7 @@ DATABASE_PATH = "/Users/nbettache/Desktop/face_recognition/data/yalefaces"
 VERBOSE = True
 
 # parameters
-TRAINING_FACES = 6
+TRAINING_FACES = 4
 TEST_FACES = 3
 DIM_REDUCTION = False
 NB_DIM = 15

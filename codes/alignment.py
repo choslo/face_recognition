@@ -281,8 +281,8 @@ def draw_triangulation(im, tri, bp):
 
 def show_warped_image(im_path, save=False, save_path="warpedImage.jpg"):
     """ Show the result of the mesh warping process """
-    img = cv2.imread(im_path)
-    img_ref = cv2.imread(IMREF_PATH)
+    img = np.array(Image.open(im_path).convert('RGB'))[:, :, ::-1]
+    img_ref = np.array(Image.open(IMREF_PATH).convert('RGB'))[:, :, ::-1]
     img_warp = mesh_align(img, img_ref)
     cv2.imshow("warped image", img_warp)
     cv2.waitKey()
@@ -293,8 +293,8 @@ def show_warped_image(im_path, save=False, save_path="warpedImage.jpg"):
 
 def show_aligned_image(im_path, save=False, save_path="alignedImage.jpg"):
     """ Show the result of the alignment process """
-    img = cv2.imread(im_path)
-    img_ref = cv2.imread(IMREF_PATH)
+    img = np.array(Image.open(im_path).convert('RGB'))[:, :, ::-1]
+    img_ref = np.array(Image.open(IMREF_PATH).convert('RGB'))[:, :, ::-1]
     img_aligned = preprocess(img, img_ref)
     cv2.imshow("aligned image", img_aligned)
     cv2.waitKey()
@@ -305,8 +305,8 @@ def show_aligned_image(im_path, save=False, save_path="alignedImage.jpg"):
 
 def show_triangulation_image(im_path, save=False, save_path="triangulationImage.jpg"):
     """ Show the result of the alignment process """
-    img = cv2.imread(im_path)
-    img_ref = cv2.imread(IMREF_PATH)
+    img = np.array(Image.open(im_path).convert('RGB'))[:, :, ::-1]
+    img_ref = np.array(Image.open(IMREF_PATH).convert('RGB'))[:, :, ::-1]
     allpoints, co = preprocess_image_before_triangulation(img)
     bp, coord = preprocess_image_before_triangulation(img_ref)
     tr = delaunay_triangulation(bp)
