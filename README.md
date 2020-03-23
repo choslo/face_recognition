@@ -17,10 +17,14 @@ The aim of the project is to implement various techniques on face recognition, b
 - glob 
 - Numpy
 - sklearn 
+- cvxopt
+- time
+- cv2
+- dlib
+``please refer to the github https://github.com/davisking/dlib?fbclid=IwAR2E3eoGhApprNtlZP-nhw-cJdcZvElFRzXbym2aExPmh-RKNwAsNhNE5zE for installation ``
+- l1ls
+- random
 
 
 ## Link to the Latex Report
-
-https://www.overleaf.com/1753595945njmbsnjxqprk
-
 
